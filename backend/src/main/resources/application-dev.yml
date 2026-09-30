@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    com.voice2send: DEBUG
+    org.springframework.security: INFO
+    org.hibernate.SQL: DEBUG

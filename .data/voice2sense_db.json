@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": "usr-default-01",
+      "fullName": "Praveen Nagaraj",
+      "email": "praveenagaraj19@gmail.com",
+      "passwordHash": "$2b$10$UcJ5IGhym3te.49Tcfq/DeunPV6JDV9LXOjI4.0Eu0wsOajdifOQK",
+      "preferredLanguage": "en",
+      "communicationPreference": "gesture",
+      "outputPreference": "voice",
+      "profilePicture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "voicePitch": 1,
+      "voiceSpeed": 1,
+      "accessibilitySettings": {
+        "highContrast": false,
+        "fontSize": "normal",
+        "hapticFeedback": true,
+        "screenReaderAnnounce": true,
+        "darkMode": false
+      },
+      "createdAt": "2026-09-29T10:22:26.508Z",
+      "updatedAt": "2026-09-29T10:22:26.509Z",
+      "inputMethod": "sign",
+      "outputMethod": "voice"
+    },
+    {
+      "id": "usr-1790681163218-h82b5",
+      "fullName": "Test Accessibility User",
+      "email": "testuser_1790681162942@example.com",
+      "passwordHash": "$2b$10$AEbF2T0oyaJB9pzTYSLd0uC31VZ18Ls0Ge0DFDfaOybKZM3ACSHAq",
+      "preferredLanguage": "en",
+      "communicationPreference": "voice",
+      "outputPreference": "sign",
+      "inputMethod": "voice",
+      "outputMethod": "sign",
+      "profilePicture": "https://api.dicebear.com/7.x/bottts/svg?seed=Test%20Accessibility%20User",
+      "voicePitch": 1,
+      "voiceSpeed": 1,
+      "accessibilitySettings": {
+        "highContrast": false,
+        "fontSize": "normal",
+        "hapticFeedback": true,
+        "screenReaderAnnounce": true,
+        "darkMode": false
+      },
+      "createdAt": "2026-09-29T11:26:03.218Z",
+      "updatedAt": "2026-09-29T11:26:03.256Z"
+    }
+  ],
+  "refreshTokens": [
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzci0xNzkwNjgxMTYzMjE4LWg4MmI1IiwiaWF0IjoxNzkwNjgxMTYzLCJleHAiOjE3OTEyODU5NjN9.CVNkaBVS1F3cg9ewd5OSdAuEpHxuIX2dqzA_EU29k-I",
+      "userId": "usr-1790681163218-h82b5",
+      "expiresAt": "2026-10-06T11:26:03.222Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv-sample-01",
+      "userId": "usr-default-01",
+      "title": "Hospital & Healthcare Assistance",
+      "personA": {
+        "name": "Person A (Sender)",
+        "inputMethod": "gesture",
+        "language": "en"
+      },
+      "personB": {
+        "name": "Person B (Receiver)",
+        "outputMethod": "voice",
+        "language": "ta"
+      },
+      "smartMode": true,
+      "createdAt": "2026-09-29T09:22:26.509Z",
+      "updatedAt": "2026-09-29T10:12:26.509Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-sample-01",
+      "conversationId": "conv-sample-01",
+      "senderId": "usr-default-01",
+      "senderName": "Person A",
+      "originalInput": "Where is the hospital?",
+      "inputType": "gesture",
+      "originalLanguage": "en",
+      "targetLanguage": "ta",
+      "translatedContent": "மருத்துவமனை எங்கே உள்ளது?",
+      "outputFormat": "voice",
+      "signTokens": [
+        "where",
+        "hospital"
+      ],
+      "confidence": 0.98,
+      "createdAt": "2026-09-29T09:52:26.509Z"
+    },
+    {
+      "id": "msg-sample-02",
+      "conversationId": "conv-sample-01",
+      "senderId": "receiver",
+      "senderName": "Person B",
+      "originalInput": "நேராக சென்று வலதுபுறம் திரும்பவும்",
+      "inputType": "voice",
+      "originalLanguage": "ta",
+      "targetLanguage": "en",
+      "translatedContent": "Go straight and turn right.",
+      "outputFormat": "gesture",
+      "signTokens": [
+        "straight",
+        "right"
+      ],
+      "confidence": 0.96,
+      "createdAt": "2026-09-29T10:12:26.509Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1790681163257-d7nik",
+      "event": "PREFERENCES_UPDATED",
+      "userId": "usr-1790681163218-h82b5",
+      "ip": "127.0.0.1",
+      "details": "User updated communication mode: Input=voice, Output=sign",
+      "timestamp": "2026-09-29T11:26:03.257Z"
+    },
+    {
+      "id": "log-1790681163222-mrqft",
+      "event": "USER_REGISTERED",
+      "userId": "usr-1790681163218-h82b5",
+      "ip": "127.0.0.1",
+      "details": "User registered: testuser_1790681162942@example.com",
+      "timestamp": "2026-09-29T11:26:03.222Z"
+    }
+  ]
+}

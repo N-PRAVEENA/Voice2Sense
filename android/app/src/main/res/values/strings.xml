@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Voice2Sense</string>
+    <string name="multimodal_banner_title">Universal Multimodal Communication</string>
+    <string name="status_ready">Sensors Ready: Speech, Text, and Sign Language</string>
+    <string name="btn_start_conversation">Start Accessibility Conversation</string>
+    <string name="btn_sign_glossary">Sign Language Vocabulary</string>
+    <string name="btn_accessibility_settings">Accessibility Settings</string>
+    <string name="conversation_title">Voice2Sense Conversation</string>
+    <string name="active_multimodal_stream">Two-Way Mode: English ↔ Tamil / Telugu / Hindi</string>
+    <string name="input_hint">Speak, type, or show gesture…</string>
+</resources>

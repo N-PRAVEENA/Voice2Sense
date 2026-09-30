@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="@string/conversation_title"
+        app:titleTextColor="@color/colorTextPrimary" />
+
+    <TextView
+        android:id="@+id/tvConversationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSurfaceVariant"
+        android:padding="8dp"
+        android:text="@string/active_multimodal_stream"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/btnCameraGesture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Gesture Camera"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/btnVoiceRecord"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Voice Input"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/input_hint"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextSecondary" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Send"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+</LinearLayout>

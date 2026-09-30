@@ -1,0 +1,11 @@
+{
+  "name": "Voice2Sense",
+  "description": "Voice2Sense is an accessibility-focused multimodal communication platform enabling real-time conversion across Voice, Text, and Sign Language gestures in English, Tamil, Telugu, and Hindi.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
